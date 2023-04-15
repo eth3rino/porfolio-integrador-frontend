@@ -1,0 +1,73 @@
+:root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    width: 35%;
+    min-width: 600px;
+    background-color: #5b5b5b;
+    height: 5rem;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    transition: .5s;
+}
+nav:hover{
+    height: 6rem;
+}
+nav a:last-child{
+    border-bottom-right-radius: 25px;
+}
+nav a:first-child{
+    border-bottom-left-radius: 25px;
+}
+nav a{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .5s,  height .8s ease;
+    z-index: 1;
+    background-color: #5b5b5b;
+}
+nav a.active{
+    background-color: #6b6b6b;
+}
+nav a:hover:not(.active){
+    background-color: #6b6b6b;
+    box-shadow: 0px 0px 10px black;
+    z-index: 2;
+}
+/* nav a:hover{
+    height: 600px;
+
+} */
+nav a img{
+    height: 2rem;
+    width: 2rem;
+}
+nav a span{
+    height: 0;
+    opacity: 0%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bold;
+    transition: .5s ease;
+    /* margin-top: 3px; */
+}
+nav:hover a span{
+    height: 1.5rem;
+    opacity: 100%;
+}

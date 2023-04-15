@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+}
+.text-container{
+    width: 40%;
+    margin:100px 400px 0px auto;
+    align-content: center;
+    /* background-color: white; */
+    text-align: center;
+    height: 400px;
+    line-height: 200px;
+    font-size: 60px;
+    color: white;
+}
+img{
+    margin: 100px 0px 0px 400px;
+}
