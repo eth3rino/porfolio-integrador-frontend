@@ -8,6 +8,13 @@ div{
     display: flex;
     justify-content: center;
 }
+.unselectable{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 nav{
     width: 35%;
     min-width: 600px;
@@ -61,9 +68,11 @@ nav a img{
 nav a span{
     height: 0;
     opacity: 0%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'ubuntu', sans-serif;
     color: black;
-    font-weight: bold;
+    /* font-weight: bold; */
+    position: relative;
+    top: 5px;
     transition: .5s ease;
     /* margin-top: 3px; */
 }
@@ -71,3 +80,7 @@ nav:hover a span{
     height: 1.5rem;
     opacity: 100%;
 }
+/* Testing different color variations
+nav a.active span{
+    color: cyan;
+} */
